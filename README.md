@@ -28,8 +28,6 @@ This project was developed collaboratively by:
 
 ---
 
-## Group: Gxx
-
 ## Project Overview
 
 PeerPrep is a collaborative coding platform that matches users to solve coding questions together in real-time.
