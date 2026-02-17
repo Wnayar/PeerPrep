@@ -1,73 +1,137 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/QUdQy4ix)
-# CS3219 Project (PeerPrep) - AY2526S1
+## William Nayar — Contribution
+
+This repository contains my implementation of the Question Service microservice, developed as part of a distributed microservices architecture.
+
+Key contributions:
+
+- Developed Question Service microservice exposing 15 REST API endpoints using Express.js and TypeScript
+- Designed MongoDB schemas supporting efficient storage and retrieval of coding questions
+- Populated database with 300+ interview questions using the TACO dataset
+- Implemented filtering, querying, and aggregation pipelines to support efficient question retrieval
+- Tested REST API endpoints using Postman validating request handling, response correctness, and error handling
+- Integrated Question Service into distributed microservices architecture enabling independent deployment and scalability
+- Collaborated using Git branching workflow, pull requests, and Agile development practices
+
+Tech Stack: Node.js • Express.js • TypeScript • MongoDB Atlas • Mongoose • Postman
+
+---
+
+## Contributors
+
+This project was developed collaboratively by:
+
+- William Nayar — https://github.com/Wnayar  
+- Lu Bolin — https://github.com/LuBolin  
+- BlazeChron — https://github.com/BlazeChron  
+- TheOnlyJuan — https://github.com/TheOnlyJuan  
+- darHH — https://github.com/darHH  
+
+---
+
 ## Group: Gxx
 
 ## Project Overview
 
 PeerPrep is a collaborative coding platform that matches users to solve coding questions together in real-time.
 
-### Core Features
-
-1. **User Authentication**
-   - Users register and log in via Firebase Authentication
-   - Session management through backend user service
-
-2. **Question Filtering**
-   - Filter coding questions by difficulty level
-   - Filter by topics of interest
-
-3. **Matchmaking System**
-   - Users click "Find Match" to enter matchmaking queue
-   - Server matches users with similar preferences who are currently searching
-   - Real-time matching algorithm
-
-4. **Collaborative Coding Room**
-   - Once matched, users enter a shared coding environment
-   - Similar to LeetCode/online coding interview platforms
-   - Real-time collaborative code editing
-   - Shared workspace for solving problems together
-
-### Architecture
-
-- **Frontend**: React + TypeScript + Vite
-- **Backend Services**: Microservices architecture
-  - User Service: Authentication and user management
-  - (More services to be added: Matching, Question, Collaboration)
-- **Database**: MongoDB Atlas
-- **Authentication**: Firebase
-
-### Note:
-- You are required to develop individual microservices within separate folders within this repository.
-- The teaching team should be given access to the repositories as we may require viewing the history of the repository in case of any disputes or disagreements. 
-
-### Question Database
-- The question service uses data from TACO the license details and links are shown below:
-- License: apache-2.0
-- Dataset: https://huggingface.co/datasets/BAAI/TACO
-- Copyright: Beijing Academy of Artificial Intelligence (BAAI)
+This platform demonstrates distributed system design using microservices architecture, scalable backend services, and modern frontend engineering practices.
 
 ---
 
-## AI Use Disclosure (CS3219 Policy Compliance)
+## Core Features
 
-### Project-Level AI Use Summary
+### 1. User Authentication
+- Users register and log in via Firebase Authentication
+- Session management through backend user service
 
-**Tools Used:** Claude Code (Claude Sonnet 4.5)
+### 2. Question Filtering
+- Filter coding questions by difficulty level
+- Filter by topics of interest
+- Powered by Question Service microservice and MongoDB aggregation pipelines
 
-**Team Member Using AI:** All
+### 3. Matchmaking System
+- Users click "Find Match" to enter matchmaking queue
+- Server matches users with similar preferences
+- Real-time matching algorithm
 
-**Prohibited Phases Avoided:**
-- Requirements elicitation and prioritization
-- Architecture and design decisions
-- Sprint planning and backlog consolidation
+### 4. Collaborative Coding Room
+- Shared real-time coding environment
+- Similar to LeetCode-style collaborative coding platforms
+- Real-time collaborative code editing
+- Shared workspace for solving problems together
 
-**Allowed Uses:**
-- **Debugging assistance:** Identified and fixed deployment script issues (Firebase JSON handling, YAML syntax, SSH variable expansion, cookie settings)
-- **Implementation code:** Generated migration logic for user profile completion feature
-- **Refactoring:** Improved deployment script structure and secret handling
+---
 
-**Verification:** All AI-generated outputs were reviewed, understood, edited, and tested by the author (LuBolin).
+## Architecture
 
-### Detailed Usage Log
+PeerPrep follows a distributed microservices architecture enabling modular development and scalable backend systems.
 
-For detailed prompts, responses, and usage context, see [/ai/usage-log.md](/ai/usage-log.md).
+### Frontend
+- React
+- TypeScript
+- Vite
+- Component-based architecture
+
+### Backend Services
+
+Microservices architecture with independently deployable services:
+
+- User Service  
+  Authentication and user management  
+
+- Question Service *(My contribution)*  
+  - REST API exposing 15 endpoints  
+  - MongoDB schema design  
+  - Query filtering and aggregation pipelines  
+  - Interview question retrieval and management  
+
+- Additional planned services:
+  - Matching Service
+  - Collaboration Service
+
+### Database
+- MongoDB Atlas
+- Mongoose schema modeling
+- Aggregation pipelines for efficient querying
+
+### Authentication
+- Firebase Authentication
+
+---
+
+## Microservices Design Principles
+
+This system demonstrates key distributed systems principles:
+
+- Independent service deployment
+- Clear API boundaries between services
+- Stateless backend services
+- Scalable system architecture
+- Modular backend design
+
+---
+
+## Question Database
+
+The Question Service uses data from the TACO dataset.
+
+License: Apache-2.0  
+Dataset: https://huggingface.co/datasets/BAAI/TACO  
+Copyright: Beijing Academy of Artificial Intelligence (BAAI)
+
+Database populated with 300+ coding interview questions.
+
+---
+
+## Engineering Focus
+
+This project demonstrates:
+
+- Microservices architecture design
+- REST API backend development using Express.js and TypeScript
+- MongoDB schema design and aggregation pipelines
+- Distributed systems integration
+- Scalable backend engineering practices
+- API testing and validation using Postman
+
+---
